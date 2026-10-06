@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rodízio da Coca</title>
+<meta name="description" content="Quem paga a Coca-Cola do almoço hoje? Rodízio para aulas de terça e quinta.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🥤%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div><h1>Rodízio da Coca</h1>
+  <div class="sub">Aulas às terças e quintas · 6 no rodízio</div></div><img class="bt" alt="Coca-Cola gelada"></div>
+  <img class="bg-bt" alt="">
+  <div class="hero">
+    <div class="lbl">Quem paga</div>
+    <div class="avatar" id="av"></div>
+    <div class="name" id="nm"></div>
+    <div class="date" id="dt"></div>
+    <div class="btns">
+      <button class="pay" onclick="pay()">✓ Já pagou</button>
+      <button class="ghost" onclick="undo()">↶ Desfazer</button>
+    </div>
+  </div>
+  <h2>Próximos</h2>
+  <div class="list" id="up"></div>
+  <h2>Últimos que pagaram</h2>
+  <div class="hist" id="hs"></div>
+  <details>
+    <summary>Ajustar a ordem</summary>
+    <div id="ord"></div>
+    <button class="reset" onclick="reset()">Voltar ao início (06/10)</button>
+  </details>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
